@@ -7,13 +7,13 @@ Firstly we have to create a repository to store our files and then we have to co
 
 # We can build our docker image and push it to ECR by using ECR push commands before that we have to install aws cli and have to do aws-configure to authenticate our AWS.
 
-![ECR2](https://user-images.githubusercontent.com/120722376/227757286-04f09633-87f6-4739-ac97-500b76ba8da7.png)
+![ecr1 1](https://user-images.githubusercontent.com/120722376/227765893-6c6540d3-7d63-48c3-8c13-e3d8ef443371.png)
 
-![ecr3](https://user-images.githubusercontent.com/120722376/227757299-cbdbe909-024b-48c7-ac9a-03c372c57694.png)
+![ecr2](https://user-images.githubusercontent.com/120722376/227765902-56092a31-20ae-4203-b00c-efefcfe2d3f8.png)
 
-![ecr4](https://user-images.githubusercontent.com/120722376/227757305-57297c7f-d8d6-46c7-abe3-f917372b7a9e.png)
+![ecr3](https://user-images.githubusercontent.com/120722376/227765913-558dc4fa-889a-465d-8bf2-7cb406526d1a.png)
 
 We can see our image pushed to ecr.
 
-![ecr5](https://user-images.githubusercontent.com/120722376/227757383-09a73101-0af1-4bf1-b0ee-54a99f2aa5be.png)
+![ecr5](https://user-images.githubusercontent.com/120722376/227765964-3ce12e9e-3f0c-4063-9857-bfc2aa660792.png)
 
