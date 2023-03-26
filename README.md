@@ -90,7 +90,9 @@ Choosing build provider as AWS CodeBuild, projectname and adding environment var
 ![image](https://user-images.githubusercontent.com/120722376/227769900-6fd8d88e-d8f9-4575-b8d7-cec389d1e91a.png)
 Choosing deploy provider as Amazon ECS, clustername, service name and rest as default
 ![image](https://user-images.githubusercontent.com/120722376/227770003-9bf7089d-7404-4700-b66e-61ce32c8a29f.png)
-
+The pipeline has been successfully executed
+![image](https://user-images.githubusercontent.com/120722376/227779664-0017d875-2841-43d9-8339-1d2f33c3861b.png)
+![image](https://user-images.githubusercontent.com/120722376/227779694-60f7abbe-299c-40cc-a468-3abff59faacd.png)
 
 
 
