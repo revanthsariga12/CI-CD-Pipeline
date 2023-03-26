@@ -102,8 +102,9 @@ In ECS service events we can see how the process has been executed
 # If we use load balancer DNS we can access our application
 ![image](https://user-images.githubusercontent.com/120722376/227779964-92e4d33e-3c35-4b1a-8093-4398aea366c0.png)
 # If we commit any changes into our repository then the pipeline automatically triggered andd starts its execution. This is overall CI/CD process
-I commit a change in a repository the pipeline automatically triggered
-![image](https://user-images.githubusercontent.com/120722376/227780221-b65d2fc5-e295-4ce1-a78f-aa0a4a750b80.png)
+If we commit a change into a repository the pipeline automatically triggered
+![image](https://user-images.githubusercontent.com/120722376/227780299-c3fe4954-351a-40ab-9c75-edb1a4131741.png)
+
 
 
 
