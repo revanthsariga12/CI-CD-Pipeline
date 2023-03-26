@@ -29,6 +29,62 @@ Rest be default
 We can view our cluster
 ![image](https://user-images.githubusercontent.com/120722376/227766582-ae4059fa-1ebd-4a52-a0de-98b4e76d402b.png)
 
+#Creating a task definition for our cluster
+Choosing launch type as a EC2
+![image](https://user-images.githubusercontent.com/120722376/227766682-ac13d7c6-e346-4bdf-9cf5-86bd538e0b5b.png)
+
+Configuring task and container definitions
+Naming task definition name as my-task and rest be default
+![image](https://user-images.githubusercontent.com/120722376/227766933-f3733196-416c-492e-a1d8-5d4a6ebd560c.png)
+Choosing task memory as 100 and task CPU as 1 vcpu
+![image](https://user-images.githubusercontent.com/120722376/227767012-3b9664ef-8f8b-47df-9959-e8448920d543.png)
+Add container and naming container and image URI taken from what created earlier, port mappings as 80
+![image](https://user-images.githubusercontent.com/120722376/227767154-e2d80ea4-cc44-4dcd-b112-f7160abe0a88.png)
+Task definiton is created
+![image](https://user-images.githubusercontent.com/120722376/227767208-44f86809-4224-49b8-9498-8133c5af5e36.png)
+
+# Creating a service
+![image](https://user-images.githubusercontent.com/120722376/227767297-857cc667-8f65-4727-984f-eb57d32622ea.png)
+Choosing launch type as EC2 and task definition automatically selected, naming service name, choosing number of tasks as 2
+![image](https://user-images.githubusercontent.com/120722376/227767424-37bdb2eb-f0f2-4b76-a7d1-3fb7b60a057c.png)
+Choosing deployment type as rolling update and rest as default
+![image](https://user-images.githubusercontent.com/120722376/227767460-38aad974-bc1c-430d-a1d8-91ba8e4405b9.png)
+There is a need of load balancer and target group in next step So, creating it
+Choosing application load balancer
+![ecs12](https://user-images.githubusercontent.com/120722376/227767572-2a6b7a75-595e-4c19-8a3f-8dcaa0d1bdc4.png)
+Choosing default vpc and mappings subnets as 1a, 1b, 1c
+![ECS13](https://user-images.githubusercontent.com/120722376/227767642-1887b6c6-a4a1-41c4-b646-4547daaf0d06.png)
+Creating a target group and choosing target type as instances
+![ecs14](https://user-images.githubusercontent.com/120722376/227767697-cf07d68e-eacd-4d0f-a4ab-5fa4de177e07.png)
+Naming target group and rest as default
+![ecs15](https://user-images.githubusercontent.com/120722376/227767738-e152b17e-b78b-498d-9051-9c907092f631.png)
+![ECS16](https://user-images.githubusercontent.com/120722376/227767746-c6bfd1ae-92d6-40b9-9160-72b3cbc0c13c.png)
+Choosing default security group that as inbound rule http enabled and selecting target group which we have been created.
+![ecs17](https://user-images.githubusercontent.com/120722376/227767811-f3fedf88-5210-4ab3-968d-38ca454fae91.png)
+Back to service we have to select load balancer name which we created earlier
+![image](https://user-images.githubusercontent.com/120722376/227767884-68998b8a-24f7-45a0-8e82-224e01fdef6d.png)
+Keeping as default
+![image](https://user-images.githubusercontent.com/120722376/227768083-ae8b5dc2-c1ed-4b20-8c49-ae6382ad5258.png)
+Creation of service completed
+![image](https://user-images.githubusercontent.com/120722376/227768124-fb493346-6919-4baf-a542-f3af18d2c698.png)
+![image](https://user-images.githubusercontent.com/120722376/227768154-80d4823b-d998-4e9d-8891-fb4a3522e422.png)
+# Creating a CodeBuild Project
+Naming project and description
+![image](https://user-images.githubusercontent.com/120722376/227768380-a1ec8ea6-1753-4411-913e-2096437b1181.png)
+Choosing Source provider as Github I already authenticated with my Github or else we store our code in AWS CodeCommit.
+![image](https://user-images.githubusercontent.com/120722376/227768489-ef394765-6d90-4d0b-883c-e681570b331d.png)
+Choosing environment as managed image, os as amazon linux2, runtime as standaed. image as standard4.0, environment type as linux and we have enable the checkmark in privileged because we need to build docker images and a new service role will be created
+![image](https://user-images.githubusercontent.com/120722376/227768695-9cb62c8b-bf01-4111-93e7-e1a33f0fba45.png)
+In buildspec section choosing use a buildspec file because we already has a file in our github repo and rest as default
+![image](https://user-images.githubusercontent.com/120722376/227768750-0dd1085a-3c4f-4043-8e78-836bb5430ce7.png)
+Build project created
+![image](https://user-images.githubusercontent.com/120722376/227768826-06f862be-0935-4bed-a0b3-e68e70d41c42.png)
+We need to attach policy as amazonec2containerregistryfullaccess for codebuild service role
+![image](https://user-images.githubusercontent.com/120722376/227768982-56aedfce-ac61-4096-ad8c-8966a187e6b3.png)
+# creating a CodePipeline
+
+
+
 
 
 
