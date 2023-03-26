@@ -12,3 +12,7 @@ Firstly we have to create a repository to store our files and then we have to co
 
 ![ecr4](https://user-images.githubusercontent.com/120722376/227757305-57297c7f-d8d6-46c7-abe3-f917372b7a9e.png)
 
+We can see our image pushed to ecr.
+
+![ecr5](https://user-images.githubusercontent.com/120722376/227757383-09a73101-0af1-4bf1-b0ee-54a99f2aa5be.png)
+
