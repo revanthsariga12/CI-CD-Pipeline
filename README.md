@@ -86,6 +86,10 @@ Naming pipeline and service as new service role
 ![image](https://user-images.githubusercontent.com/120722376/227769303-58668f79-b610-405b-9861-6fd1daac6aa2.png)
 Choosing source stage as github and choosing our repository name, branch name, enabling change detection options.
 ![image](https://user-images.githubusercontent.com/120722376/227769412-446cec6d-b2bd-4550-8e50-2a5d84313acb.png)
+Choosing build provider as AWS CodeBuild, projectname and adding environment variables
+![image](https://user-images.githubusercontent.com/120722376/227769900-6fd8d88e-d8f9-4575-b8d7-cec389d1e91a.png)
+Choosing deploy provider as Amazon ECS, clustername, service name and rest as default
+![image](https://user-images.githubusercontent.com/120722376/227770003-9bf7089d-7404-4700-b66e-61ce32c8a29f.png)
 
 
 
