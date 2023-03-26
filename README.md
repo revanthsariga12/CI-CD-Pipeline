@@ -94,6 +94,9 @@ The pipeline has been successfully executed
 ![image](https://user-images.githubusercontent.com/120722376/227779664-0017d875-2841-43d9-8339-1d2f33c3861b.png)
 ![image](https://user-images.githubusercontent.com/120722376/227779694-60f7abbe-299c-40cc-a468-3abff59faacd.png)
 
+In ECS service events we can see how the process has been executed
+![image](https://user-images.githubusercontent.com/120722376/227779791-2cc11db7-7823-4684-8b56-dde278305b87.png)
+
 
 
 
