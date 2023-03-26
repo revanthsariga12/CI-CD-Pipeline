@@ -16,4 +16,21 @@ Firstly we have to create a repository to store our files and then we have to co
 We can see our image pushed to ecr.
 
 ![ecr5](https://user-images.githubusercontent.com/120722376/227765964-3ce12e9e-3f0c-4063-9857-bfc2aa660792.png)
+# Creating an ECS cluster
+I'm using EC2+networking.
+![image](https://user-images.githubusercontent.com/120722376/227766068-4f36ed66-4c67-401c-b17e-c3073a1e80d5.png)
+Creating a cluster name and then choosing EC2 instance type as t2.micro, number of instances as 2 and a key pair.
+![image](https://user-images.githubusercontent.com/120722376/227766228-a6287425-fbae-4554-a799-b0ed934d1aed.png)
+Choosing default VPC, subnets 1a,1b,1c, autoassign public ip enabled and security group that as inbound role http port 80 has enabled.
+![image](https://user-images.githubusercontent.com/120722376/227766303-c5b86a06-a17c-401b-b380-b07cbe7943ea.png)
+Rest be default
+![image](https://user-images.githubusercontent.com/120722376/227766484-41377473-ddb1-44c9-be3f-dd631c8b80f7.png)
+![image](https://user-images.githubusercontent.com/120722376/227766543-1da442f1-d808-4cec-92c2-3dafed561092.png)
+We can view our cluster
+![image](https://user-images.githubusercontent.com/120722376/227766582-ae4059fa-1ebd-4a52-a0de-98b4e76d402b.png)
+
+
+
+
+
 
