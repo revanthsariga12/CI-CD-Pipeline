@@ -82,7 +82,10 @@ Build project created
 We need to attach policy as amazonec2containerregistryfullaccess for codebuild service role
 ![image](https://user-images.githubusercontent.com/120722376/227768982-56aedfce-ac61-4096-ad8c-8966a187e6b3.png)
 # creating a CodePipeline
-
+Naming pipeline and service as new service role
+![image](https://user-images.githubusercontent.com/120722376/227769303-58668f79-b610-405b-9861-6fd1daac6aa2.png)
+Choosing source stage as github and choosing our repository name, branch name, enabling change detection options.
+![image](https://user-images.githubusercontent.com/120722376/227769412-446cec6d-b2bd-4550-8e50-2a5d84313acb.png)
 
 
 
