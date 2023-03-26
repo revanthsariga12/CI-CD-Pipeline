@@ -10,9 +10,9 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t cicd:1 .
-      - docker tag cicd:1 public.ecr.aws/g5y0l8i5/cicd-pipeline
+      - docker tag cicd:1 391800139496.dkr.ecr.us-east-1.amazonaws.com/ci-cd
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push public.ecr.aws/g5y0l8i5/cicd-pipeline
+      - docker push 391800139496.dkr.ecr.us-east-1.amazonaws.com/ci-cd
