@@ -29,7 +29,7 @@ Rest be default
 We can view our cluster
 ![image](https://user-images.githubusercontent.com/120722376/227766582-ae4059fa-1ebd-4a52-a0de-98b4e76d402b.png)
 
-#Creating a task definition for our cluster
+# Creating a task definition for our cluster
 Choosing launch type as a EC2
 ![image](https://user-images.githubusercontent.com/120722376/227766682-ac13d7c6-e346-4bdf-9cf5-86bd538e0b5b.png)
 
